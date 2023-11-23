@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/5.css">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        <img src="img/Tosan-motor-svg-white.svg" alt="">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#">هوشمند وزیست محیطی</a>
+                            </li>
+                            <li>
+                                <a href="#">تماس با ما</a>
+                            </li>
+                            <li>
+                                <a href="#">درباره ما</a>
+                            </li>
+                            <li>
+                                <a href="#">وبلاگ</a>
+                            </li>
+                            <li>
+                                <a href="#"> خدمات</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:3000/2.html">محصولات</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:3000/1.html">صفحه اصلی</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="java">
+            <div class="container">
+                <div class="left">
+                    <label for="front">Front</label>
+                    <input type="radio" name="pic" id="front" value="Front" data-img="img/java script/MM/product_MM-FRONT.png">
+                    <label for="back">Back</label>
+                    <input type="radio" name="pic" id="back" value="Back" data-img="img/java script/MM/product_MM-BACK.png">
+                    <label for="side">Side</label>
+                    <input type="radio" name="pic" id="side" value="Side" data-img="img/java script/MM/product_MM-SIDE.png">
+                    <label for="pfront">Rfront</label>
+                    <input type="radio" name="pic" id="pfront" value=" Rfront" data-img="img/java script/MM/product_MM-RFRONT.png">
+                    <label for="rback">Rback</label>
+                    <input type="radio" name="pic" id="rback" value=" Rback" data-img="img/java script/MM/product_MM-RBACK.png">
+                    <h2></h2>
+                    <img class="window" src="img/java script/MM/product_MM-FRONT.png" alt="" width="600">
+                    <script src="jquery.js"></script>
+                    <script>
+                        $("[name='pic']").on('change', function() {
+                            var pic = $(this).val()
+                            $("h2").text(pic)
+                            var img = $(this).attr("data-img")
+                            // var img = $(this).data('img')
+                            $(".window").attr("src", img)
+                        })
+                    </script>  
+                </div>
+                <div class="right">
+                    <h3>MM3 SMART</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="dataleft">
+                            <p>نوع ترمز: ترمزهیدرولیکی دیسکی </p>
+                            <p>صفحه نمایش : دیجیتال</p>
+                            <p>دنده عقب: دارد</p>
+                            <p>تنظیم شتاب:۳ حالت</p>
+                            <p>قفل فرمان: دارد</p>
+                            <p>دزدگیر: دارد</p>
+                            <p>نشانگر باتری: دارد</p>
+                        </div>
+                        <div class="dataright">
+                            <p>حد اکثر توان (وات): ۵۰۰۰</p>
+                            <p>سرعت شارژ: ۳ ساعت</p>
+                            <p> دارد: GPS</p>
+                            <p>سیستم هوشمند توسن :دارد   </p>
+                            <p>دیاگ آنلابن: دارد</p>
+                            <p>ارتباط با موبایل و بلوتوث:دارد</p>
+                            <p>امکان فست شارژ: دارد</p>
+                            <p>گارانتی: ۱ سال</p>
+                        </div>
+                        <div class="datalogo">
+                            <h3>مشخصات فنی</h3>
+                            <hr>
+                            <img src="img/cropped-TosanMotors-Tab-Logo-75x75.png" alt="">
+                        </div>
+                    </div>
+                    </div>
+                
+            </div>
+        </section>
+    
+</body>
+</html>
